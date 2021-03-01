@@ -23,7 +23,7 @@ const Chat = ({ location }) => {
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
-    socket = io('http://localhost:5000');
+    socket = io('https://chatapp0007.herokuapp.com/');
 
     setRoom(room);
     setName(name)
@@ -34,7 +34,7 @@ const Chat = ({ location }) => {
       }
     });
     // eslint-disable-next-line
-  }, ['http://localhost:5000', location.search]);
+  }, ['https://chatapp0007.herokuapp.com/', location.search]);
   
   useEffect(() => {
     socket.on('message', message => {
