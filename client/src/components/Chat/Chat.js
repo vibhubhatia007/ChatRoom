@@ -1,3 +1,4 @@
+  
 import React, { useState, useEffect } from "react";
 import queryString from 'query-string';
 import io from "socket.io-client";
@@ -9,7 +10,6 @@ import Input from '../Input/Input';
 
 import './Chat.css';
 
-const ENDPOINT = 'https://project-chat-application.herokuapp.com/';
 
 let socket;
 
@@ -23,9 +23,7 @@ const Chat = ({ location }) => {
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
-    
-
-    socket = io(ENDPOINT);
+    socket = io('http://localhost:5000');
 
     setRoom(room);
     setName(name)
@@ -35,8 +33,8 @@ const Chat = ({ location }) => {
         alert(error);
       }
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ENDPOINT, location.search]);
+    // eslint-disable-next-line
+  }, ['http://localhost:5000', location.search]);
   
   useEffect(() => {
     socket.on('message', message => {
