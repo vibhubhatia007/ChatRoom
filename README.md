@@ -14,7 +14,10 @@ This will run your react app at localhost:3000
 
 backend
 cd server
+npm i
 node index.js
+for dev mode you can use
+nodemon index.js
 this will run your server at locahost:5000
 
 ```
@@ -46,7 +49,7 @@ netlify deploy --prod
 ```
 
 
-## deplying backend 
+## deploying backend 
 
 create an app on heroku and follow the given instructions
 
