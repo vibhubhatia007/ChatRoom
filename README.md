@@ -36,7 +36,6 @@ this will run your server at locahost:5000
 
 ## deploying frontend
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/32d71b0d-850f-4d99-b3ee-39d44fa2da4f/deploy-status)](https://app.netlify.com/sites/objective-hodgkin-c19b8c/deploys)
 
 ```
 npm run build
