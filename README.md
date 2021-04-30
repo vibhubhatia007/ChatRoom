@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The site can be viewed over [here](https://objective-hodgkin-c19b8c.netlify.app/).
 
 ## setup instructions
 
@@ -35,7 +36,6 @@ this will run your server at locahost:5000
 
 ## deploying frontend
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c0be0ad2-9d7c-4cf9-a211-fbf00bb57fdc/deploy-status)](https://app.netlify.com/sites/relaxed-joliot-16ab24/deploys)
 
 ```
 npm run build
