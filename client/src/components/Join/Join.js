@@ -13,7 +13,7 @@ export default function SignIn() {
     <div className="joinOuterContainer">
 
       <div className="joinInnerContainer1">
-        <img src={banner}></img>
+        <img src={banner} alt=""></img>
       </div>
 
       <div className="joinInnerContainer">
@@ -27,11 +27,10 @@ export default function SignIn() {
         <Link onClick={e => (!name || !room) ? e.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}>
           <button className={'button mt-20'} type="submit">Sign In</button>
         </Link>
-        <h3></h3>
       </div>
 
       <div className="joinInnerContainersm">
-        <img src={bannersmall}></img>
+        <img src={bannersmall} alt=""></img>
       </div>
      
     </div>
