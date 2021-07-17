@@ -14,6 +14,7 @@ const io = socketio(server);
 app.use(cors());
 app.use(router);
 
+
 io.on('connect', (socket) => {
   socket.on('join', ({ name, room }, callback) => {
     const { error, user } = addUser({ id: socket.id, name, room });
@@ -48,4 +49,25 @@ io.on('connect', (socket) => {
   })
 });
 
+
+
+io.on("connection", (socket) => {
+	socket.emit("me", socket.id);
+
+	socket.on("disconnect", () => {
+		socket.broadcast.emit("callEnded")
+	});
+
+	socket.on("callUser", ({ userToCall, signalData, from, name }) => {
+		io.to(userToCall).emit("callUser", { signal: signalData, from, name });
+	});
+
+	socket.on("answerCall", (data) => {
+		io.to(data.to).emit("callAccepted", data.signal)
+	});
+});
+
+
+
 server.listen(process.env.PORT || 5000, () => console.log(`Server has started.`));
+
