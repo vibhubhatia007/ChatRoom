@@ -7,7 +7,7 @@ import './style.css';
 
 const Video = () => {
     return (
-        <ContextProvider>
+        <ContextProvider> 
     <App />
   </ContextProvider>
     )

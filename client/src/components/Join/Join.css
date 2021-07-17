@@ -70,16 +70,17 @@ html, body {
     text-align: center; 
     align-items: center;
     display: block;
-    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .joinInnerContainer {
-    width: 90%;
+    width: 100%;
   }
   .joinInnerContainer1 {
     display: none;
   }
   .joinInnerContainersm{
-    width: 90%;
+    width: 100%;
   }
 }
 
