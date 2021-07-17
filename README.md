@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-The site can be viewed over [here](https://objective-hodgkin-c19b8c.netlify.app/).
+The site can be viewed over [here](https://chitchat-frontend.netlify.app/).
 
 ## setup instructions
 
@@ -30,9 +30,9 @@ this will run your server at locahost:5000
 [socket.io](https://socket.io/get-started/chat)\
 [cors](https://www.npmjs.com/package/cors)\
 [Query string](https://www.npmjs.com/package/query-string)\
-[React Emoji](https://www.npmjs.com/package/react-emoji)
-
-
+[React Emoji](https://www.npmjs.com/package/react-emoji)\
+[Copy tp Clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)\
+[Peer JS](https://www.npmjs.com/package/peerjs)
 
 ## deploying frontend
 
